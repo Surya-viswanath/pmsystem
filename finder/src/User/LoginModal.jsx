@@ -20,7 +20,7 @@ function LoginModal() {
         const Email=email;
         event.preventDefault();
         try {
-          const displays = await Axios.post('http://localhost:4008/customerlogin', { email, password });
+          const displays = await Axios.post('https://pmsystem-4.onrender.com/customerlogin', { email, password });
           console.log(displays.data);
           const userDatas = displays.data;
           // localStorage.setItem('user', JSON.stringify(userData));
