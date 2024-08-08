@@ -20,7 +20,7 @@ function Findagent() {
   useEffect(()=>{
     const agent =async()=>{
      try{
-       const responses = await axios.get('http://localhost:4008/getcustomer')     
+       const responses = await axios.get('https://pmsystem-4.onrender.com/getcustomer')     
      setsecond(responses.data)
      console.log(second);
      }
@@ -34,7 +34,7 @@ function Findagent() {
   useEffect(() => {
     const handleItems = async () => {
       try {
-        const response = await axios.get('http://localhost:4008/getpro');
+        const response = await axios.get('https://pmsystem-4.onrender.com/getpro');
         setFirst(response.data);
        
        
