@@ -19,7 +19,7 @@ function GetoneAgentpro() {
   useEffect(() => {
     const handleItems = async () => {
       try {
-        const response = await axios.get('http://localhost:4008/getpro');
+        const response = await axios.get('https://pmsystem-4.onrender.com/getpro');
         setFirst(response.data);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -37,7 +37,7 @@ const filteredData = first.filter((item) => item.email === getemail);
 
 // const handleUpdate = async (id, updates) => {
 //   try {
-//     const response = await axios.put(`http://localhost:4008/updateList/${id}`, updates);
+//     const response = await axios.put(`https://pmsystem-4.onrender.com/updateList/${id}`, updates);
 //     // Update the state after successful update
 //     setFirst(first.map(list => list._id === id ? response.data : list));
 //   } catch (error) {
@@ -46,7 +46,7 @@ const filteredData = first.filter((item) => item.email === getemail);
 // };
 const handleUpdate = async (id) => {
   try {
-    await axios.put(`http://localhost:4008/updateList/${id}`, updatedData);
+    await axios.put(`https://pmsystem-4.onrender.com/updateList/${id}`, updatedData);
     // Optionally, you can fetch updated data from the server and update the state
     // Or you can update the state based on the updatedData directly
   } catch (error) {
@@ -59,7 +59,7 @@ const handleInputChange = (event) => {
 };
 const handleDelete = async (id) => {
   try {
-    await axios.delete(`http://localhost:4008/deleteList/${id}`);
+    await axios.delete(`https://pmsystem-4.onrender.com/deleteList/${id}`);
     // Update the state after successful deletion
     setFirst(first.filter(list => list._id !== id));
   } catch (error) {
