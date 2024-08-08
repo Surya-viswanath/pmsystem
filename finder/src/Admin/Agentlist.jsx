@@ -11,7 +11,7 @@ function Agentlist() {
     useEffect(() => {
         const handleItems = async () => {
           try {
-            const response = await axios.get('http://localhost:4008/getagent');
+            const response = await axios.get('https://pmsystem-4.onrender.com/getagent');
             setAgent(response.data);
           } catch (error) {
             console.error('Error fetching data:', error);
@@ -23,7 +23,7 @@ function Agentlist() {
 
       const handleDelete = async (id) => {
         try {
-          await axios.delete(`http://localhost:4008/deleteagent/${id}`);
+          await axios.delete(`https://pmsystem-4.onrender.com/deleteagent/${id}`);
           // Update the state after successful deletion
           setAgent(Agent.filter(list => list._id !== id));
         } catch (error) {
