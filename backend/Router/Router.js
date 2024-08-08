@@ -2,7 +2,7 @@ const express = require('express');
 
 
 // const Usersignup = require('../Controller/Usersignup');
-const {Createagent,getagent,deleteagent} = require('../Controller/Users');
+// const {Createagent,getagent,deleteagent} = require('../Controller/Users');
 
 const getoneuser = require('../Controller/Getbyemail');
 // const { Createlist ,getcollection} = require('../Controller/Addpro');
@@ -45,9 +45,9 @@ router.route('/update-user/:id').put(updateCustomerRole)
 
 
 
-router.route('/deleteagent/:id').delete(deleteagent)
-router.post('/createagent',Createagent)
-router.route('/getagent').get(getagent)
+// router.route('/deleteagent/:id').delete(deleteagent)
+// router.post('/createagent',Createagent)
+// router.route('/getagent').get(getagent)
 // router.route('/login').post(Userlogin)
 router.route('/getone/:email').get(getoneuser)
 router.route('/createpro').post(generatelist)

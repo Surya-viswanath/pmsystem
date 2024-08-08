@@ -1,5 +1,5 @@
 
-const bcrypt = require('bcrypt');
+
 const Customer = require('./Customerschema');
 
 const getcustomer = async (req, res) => {
