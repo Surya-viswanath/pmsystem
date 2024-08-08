@@ -1,0 +1,11 @@
+.loginsub{
+    background-image: url('signin.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+}
+.view{
+    margin-top: 300px;
+    text-align: center;
+    
+}

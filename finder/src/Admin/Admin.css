@@ -1,0 +1,46 @@
+/* .main-head{
+    padding-bottom: 20px;
+    width: 100%;
+} */
+.head-restaurants{
+    padding-bottom: 20px;
+    text-align: center;
+}
+/* .table{
+margin: 10px;
+text-align:start;
+} */
+.table-head{
+    font-size: 18px;
+    font-weight: 200px;
+    padding-bottom: 10px;
+   
+
+}
+.table-border{
+margin: 20px;
+padding: 20px;
+
+}
+.delete-icon{
+    font-size: 24px;
+    color: #dc3545;
+}
+.banner-nav-text{
+    color: black;
+}
+.banner-nav-text :hover{
+    color: #dc3545;
+}
+.food-title{
+    color: #dc3545;
+}
+.dashboard-border{
+    /* margin: 20px;
+padding: 20px; */
+
+}
+.section-p1 {
+    padding: 20px 40px;
+    
+  }

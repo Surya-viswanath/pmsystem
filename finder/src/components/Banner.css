@@ -1,0 +1,26 @@
+.banner{
+    background-image: url('Bannerhome.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    background-color: 'white';
+    height:70vh;
+    overflow-x: hidden;
+    
+}
+.find{
+    color: #393d73;
+    font-size: 41.856px;
+    text-align: left;
+   font-weight: 600;
+   line-height: 7.2rem;
+   text-shadow: 0 2px 9px rgba(0,0,0,.25);
+   padding-top: 3%;
+   margin-left: 10%;
+}
+.search{
+    border: 1px solid black;
+    width:50%;
+    height: 13%;
+    text-align: center;
+}

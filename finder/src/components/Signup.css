@@ -1,0 +1,52 @@
+.sign{
+   
+}
+.signup{
+    align-items: center;
+  
+    /* background-color: #f7f6fb; */
+    background-image: url('bg1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    margin:2% 5%;
+    padding: 2% 5%;
+   
+    color:black; 
+}
+.signbut{
+    border: none;
+    /* background-color: rgba(3, 49, 148, 0.84); */
+    background-color: rgb(239, 94, 78);
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 2% 5%;
+}
+.signbut:hover{
+  
+    background-color: rgb(239, 94, 78);
+}
+
+.add{
+    align-items: center;
+    background-color: #f7f6fb;
+    /* background-color: #f7f6fb; */
+    margin:2% 5%;
+    padding: 2% 5%;
+    color: black;
+    padding-bottom: 5%;
+}
+
+
+
+table,th,td{
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+    width: 350px;
+    height: 20px;
+    text-align: center;
+}
+table{
+    width:1000px
+}

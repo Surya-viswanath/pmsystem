@@ -1,0 +1,66 @@
+
+.dropdownSidebar {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    color: #333;
+}
+
+.dropdownSidebar:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdownIcon {
+    position: absolute;
+    right: 1rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.dropdownIcon.rotate {
+    transform: rotate(180deg);
+}
+
+.submenu {
+    transition: height 0.3s ease;
+    overflow: hidden;
+    height: 0;
+}
+
+.submenu.open {
+    height: auto;
+}
+
+.submenu-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+}
+
+.sideLink {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.sideLink:hover {
+    background-color: #f0f0f0;
+}
+
+.sideLinkActive {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #ddd;
+    color: #000;
+    text-decoration: none;
+}

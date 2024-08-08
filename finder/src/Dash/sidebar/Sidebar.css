@@ -1,0 +1,27 @@
+
+.menu-item {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.sideLink {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.sideLink:hover {
+    background-color: #f0f0f0;
+}
+
+.sideLinkActive {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #ddd;
+    color: #000;
+    text-decoration: none;
+}

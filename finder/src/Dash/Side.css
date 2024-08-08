@@ -1,0 +1,254 @@
+/* 
+.overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 20;
+  
+    transition: opacity 0.3s ease;
+}
+
+.overlay.hidden {
+    display: none;
+    opacity: 0;
+}
+
+.overlay.visible {
+    display: block;
+    opacity: 1;
+}
+
+.sidebar {
+    position: fixed;
+    inset-y: 0;
+    left: 0;
+    z-index: 30;
+    width: 14rem;
+    display: flex;
+    flex-direction: column;
+  
+    min-height: 100vh;
+    transition: transform 0.3s ease;
+    
+}
+
+.sidebar.open {
+    transform: translateX(0);
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #333;
+    padding: 18px;
+}
+
+.sidebar-content {
+    overflow-y: auto;
+
+}
+
+.section-title {
+    color:black;
+    font-weight: 600;
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.75rem;
+}
+
+.sideLink {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    color: black;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.sideLink:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.sideLinkActive {
+    background-color: #ddd;
+    color: #000;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.sidebar-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 20;
+    transition: opacity;
+    background-color: black;
+    opacity: 0.5;
+  }
+  
+  .sidebar-backdrop.open {
+    display: block;
+  }
+  
+  .sidebar-backdrop.closed {
+    display: none;
+  }
+  
+  .sidebar {
+    position: fixed;
+    inset-y: 0;
+    left: 0;
+    z-index: 30;
+    width: 16rem; 
+    display: flex;
+    flex-direction: column;
+    background-color: #0c1427;
+    min-height: 100vh;
+    transition: transform 0.3s;
+    transform: translateX(-100%);
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  
+  .sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #1f2937; 
+    padding: 18px 0;
+  }
+  
+  .sidebar-content {
+    overflow-y: auto;
+  }
+  
+  .sidebar-nav {
+    margin-top: 1.25rem; 
+    padding: 0 0.75rem; 
+  }
+  
+  .sidebar-heading {
+    color: #9ca3af; 
+    font-weight: 600;
+    font-size: 0.75rem; 
+    margin-bottom: 0.25rem; 
+  }
+  
+  .sidebar-heading.settings {
+    margin-top: 0.5rem; 
+  }
+  
+  .sidebar-item {
+    margin-bottom: 1rem;
+  } */
+  
+
+  /* Default sidebar style */
+.sidebar {
+    position: fixed;
+    inset-y: 0;
+    left: 0;
+    z-index: 30;
+    width: 14rem; /* 64 * 0.25rem */
+    display: flex;
+    flex-direction: column;
+    /* background-color: #0c1427; */
+    min-height: 100vh;
+    transition: transform 0.3s;
+    margin-top: 2%;
+    
+}
+
+/* Sidebar visibility for large screens */
+@media (min-width: 1024px) {
+    .sidebar {
+        transform: translateX(0); /* Always shown */
+    }
+
+    .sidebar-backdrop {
+        display: none; /* No backdrop for large screens */
+    }
+}
+
+/* Sidebar visibility for small screens */
+@media (max-width: 1023px) {
+    .sidebar {
+        transform: translateX(-100%);
+    }
+
+    .sidebar.open {
+        transform: translateX(0);
+    }
+
+    .sidebar-backdrop {
+        display: block;
+    }
+
+    .sidebar-backdrop.closed {
+        display: none;
+    }
+}
+
+/* Sidebar header style */
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #1f2937; /* gray-900 */
+    padding: 18px 0;
+}
+
+/* Sidebar content style */
+.sidebar-content {
+    overflow-y: auto;
+}
+
+/* Sidebar navigation style */
+.sidebar-nav {
+    margin-top: 1.25rem; /* 5 * 0.25rem */
+    padding: 0 0.75rem; /* 3 * 0.25rem */
+}
+
+/* Sidebar heading style */
+.sidebar-heading {
+    color: #9ca3af; /* gray-400 */
+    font-weight: 600;
+    font-size: 0.75rem; /* 12px */
+    margin-bottom: 0.25rem; /* 1 * 0.25rem */
+}
+
+/* Sidebar heading for settings */
+.sidebar-heading.settings {
+    margin-top: 0.5rem; /* 2 * 0.25rem */
+}
+
+/* Sidebar item style */
+.sidebar-item {
+    margin-bottom: 1rem;
+}
+
+/* Sidebar backdrop style */
+.sidebar-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 20;
+    transition: opacity;
+    /* background-color: black; */
+    opacity: 0.5;
+}
+
+.sidebar-backdrop.open {
+    display: block;
+}

@@ -1,0 +1,31 @@
+.wish-remove{
+    /* background-color: #dc3545;
+    /* margin-right: 20px; */
+    border: none; 
+    padding: 8px;
+   
+    background-color: white;
+    color: #9c9c9c;
+    border: 1px solid #cfcfcf;
+    border-radius: 8px;
+    font-size: 14px;
+
+}
+.wish-remove :hover{
+    color:#dc3545;
+    background-color: white;
+}
+.wish-addcart{
+    color: white;
+    background-color: #dc3545;
+    margin-left: 20px;
+    border: none;
+}
+.wish-addcart :hover{
+    background-color: white;
+    color: #dc3545;
+}
+.section-p4 {
+    padding: 40px 40px;
+    
+  }

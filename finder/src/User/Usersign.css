@@ -1,0 +1,21 @@
+.userlog{
+    align-items: center;
+  
+    /* background-color: #f7f6fb; */
+    background-image: url('usersign.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    margin:2% 5%;
+    padding: 2% 5%;
+   
+    color:black; 
+}
+.userlog{
+    background-image: url('https://img.freepik.com/free-photo/miniature-house-model-near-sale-tag-green-textured-desk-against-white-backdrop_23-2148060175.jpg?t=st=1712748735~exp=1712752335~hmac=f358deae6769d4b53c2041acbcaaf5ed544e9634cd8a65e17beac76e9cba1d65&w=900');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+   
+    
+}

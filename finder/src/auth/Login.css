@@ -1,0 +1,41 @@
+.login-form-container {
+    margin: 5% 25%;
+    background-color: white;
+    background-color: var(--bg-color-dark); /* Fallback for dark mode */
+   
+    border-radius: 1rem; /* 16px */
+   
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow with light opacity */
+}
+
+@media (prefers-color-scheme: dark) {
+    .login-form-container {
+        background-color: #1a202c; /* Equivalent to dark:bg-gray-900 */
+    }
+}
+
+
+
+
+
+.userlogs{
+    align-items: center;
+  
+    /* background-color: #f7f6fb; */
+    /* background-image: url('usersign.avif'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    margin:2% 5%;
+    padding: 2% 5%;
+   
+    color:black; 
+}
+.userlogs{
+    background-color: url('https://img.freepik.com/free-photo/miniature-house-model-near-sale-tag-green-textured-desk-against-white-backdrop_23-2148060175.jpg?t=st=1712748735~exp=1712752335~hmac=f358deae6769d4b53c2041acbcaaf5ed544e9634cd8a65e17beac76e9cba1d65&w=900');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+   
+    
+}
