@@ -27,7 +27,7 @@ function Allproperties() {
   });
 
   useEffect(() => {
-    axios.get('http://localhost:4008/getpro')
+    axios.get('https://pmsystem-4.onrender.com/getpro')
       .then(response => {
         setProperties(response.data);
         setFilteredProperties(response.data);
@@ -87,7 +87,7 @@ const handleAddToWishlist = async (propertyid) => {
       return;
     }
 
-    await axios.post('http://localhost:4008/wishlist', {
+    await axios.post('https://pmsystem-4.onrender.com/wishlist', {
       userId: user._id,
       propertyid,
     });
