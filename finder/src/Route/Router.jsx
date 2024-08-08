@@ -58,7 +58,7 @@ function Router() {
       
       <BrowserRouter>
       <Routes>
-      {/* <Route path='/pro' element={<><Propertybyone/></>}></Route> */}
+      <Route path='/prop' element={<><Usermenu/><Propertybyone/></>}></Route>
       {/* <Route path='/wishlist' element={<Wishlist/>}></Route> */}
       {/* <Route path='/profile' element={<><Usermenu/><Profile/></>}></Route> */}
       {/* <Route path='/' element={<><Usermenu/><Banner/></>}></Route> */}
