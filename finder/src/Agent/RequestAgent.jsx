@@ -20,7 +20,7 @@ const RequestAgent = () => {
     useEffect(() => {
         const fetchPendingRequest = async () => {
             try {
-                const response = await axios.get(`http://localhost:4000/check-pending-request?userId=${user?._id}`);
+                const response = await axios.get(`https://pmsystem-4.onrender.com/check-pending-request?userId=${user?._id}`);
                 setHasPendingRequest(response.data.hasPendingRequest);
             } catch (error) {
                 console.error("Error checking pending request:", error);
@@ -44,7 +44,7 @@ const RequestAgent = () => {
             };
 
             try {
-                const requestRes = await axios.post('http://localhost:4008/request-organizer', request);
+                const requestRes = await axios.post('https://pmsystem-4.onrender.com/request-organizer', request);
                 if (requestRes.data._id) {
                     toast.success('Request for organizer, wait for confirmation');
                     reset();
@@ -59,80 +59,7 @@ const RequestAgent = () => {
     };
 
     return (
-        // <div className="bg-[#E9F8F3B2] ">
-        //     <Container>
-        //         {
-        //             user?.role === 'admin' || user?.role === 'organizer'
-        //                 ?
-        //                 <div className="h-[60vh] ">
-        //                     <h2 className="text-4xl font-bold text-dark_01 text-center">Your are already {user?.role}. Please go to <Link to='/dashboard' className="text-primary">Dashboard</Link></h2>
-        //                 </div>
-        //                 :
-        //                 <div className="bg-white " >
-        //                     <div className="text-center">
-        //                         <h2 className="text-3xl text-dark_01 font-medium">Request for Organizer</h2>
-        //                     </div>
-                           
-        //                     <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 " >
-        //                         <div >
-        //                             <label className="block text-gray-700 font-semibold mb-1">Your Name</label>
-        //                             <input
-        //                                 type="text"
-        //                                 {...register('name', { required: true })}
-        //                                 value={user?.name}
-        //                                 placeholder="Name"
-        //                                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-        //                                 style={{textAlign:'left'}}
-        //                                  />
-        //                         </div>
-        //                         <div>
-        //                             <label className="block text-gray-700 font-semibold mb-1">Email Address</label>
-        //                             <input
-        //                                 type="email"
-        //                                 {...register('email', { required: true })}
-        //                                 value={user?.email}
-        //                                 placeholder="Email"
-        //                                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-        //                             />
-        //                             {errors.email && <span className="text-red-500">Email is required</span>}
-        //                         </div>
-        //                         <div>
-        //                             <label className="block text-gray-700 font-semibold mb-1">Experience</label>
-        //                             <input
-        //                                 type="text"
-        //                                 placeholder="Experience"
-        //                                 {...register('experience', { required: true })}
-        //                                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-        //                             />
-        //                             {errors.experience && <span className="text-red-500">Experience is required</span>}
-        //                         </div>
-        //                         <div>
-        //                             <label htmlFor="experience" className="block text-gray-700 font-semibold mb-1">Few about you</label>
-        //                             <textarea
-        //                                 {...register('details', { required: true })}
-        //                                 placeholder="Few about you"
-        //                                 style={{paddingRight:'5%'}}
-        //                                 className="w-full  py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"></textarea>
-        //                             {errors.details && <span className="text-red-500">required</span>}
-        //                         </div>
-        //                         <div>
-        //                             <label className="block text-gray-700 font-semibold mb-1">Known languages</label>
-        //                             <input
-        //                                 {...register('languages', { required: true })}
-        //                                 placeholder="Languages"
-        //                                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"></input>
-        //                             {errors.languages && <span className="text-red-500">Skills is required</span>}
-        //                         </div>
-        //                         <div className="mt-4 flex justify-center">
-        //                             <button className=" px-4 py-2 rounded-md text-white uppercase" style={{backgroundColor:'#393d73'}}>Submit Request</button>
-        //                         </div>
-        //                     </form>
-                            
-
-        //                 </div>
-        //         }
-        //     </Container>
-        // </div>
+      
 
         <div className="bg-[#E9F8F3B2] py-4">
             <Container>
