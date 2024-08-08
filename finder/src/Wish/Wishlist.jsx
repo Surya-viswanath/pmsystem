@@ -25,7 +25,7 @@ const WishList = () => {
   useEffect(() => {
     const fetchWishlistItems = async () => {
       try {
-        const response = await axios.get(`http://localhost:4008/getwishlist/${user._id}`);
+        const response = await axios.get(`https://pmsystem-4.onrender.com/getwishlist/${user._id}`);
 // console.log("data",response);
 
 const uniqueWishlistItems = removeDuplicates(response.data.properties, '_id');
@@ -55,7 +55,7 @@ const removeDuplicates = (items, key) => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:4008/deletewishlist/${user._id}/${id}`);
+      await axios.delete(`https://pmsystem-4.onrender.com/deletewishlist/${user._id}/${id}`);
       // After successful deletion on the server, update the cart items displayed in the UI
       const updatedWishlistedItems = wishlistItems.filter(item => item._id !== id);
       setWishlistItems(updatedWishlistedItems);
