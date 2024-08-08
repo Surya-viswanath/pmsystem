@@ -73,7 +73,7 @@ const handlephone=(event)=>{
 const handleSubmit =async(event)=>{
     event.preventDefault()
     try{
-    const display =await axios.post('http://localhost:4008/createpro',{description,address,regularPrice,discountPrice,bathrooms,bedrooms,furnished,parking,type,offer,propertysize,phone,email,image,location,sell})
+    const display =await axios.post('https://pmsystem-4.onrender.com/createpro',{description,address,regularPrice,discountPrice,bathrooms,bedrooms,furnished,parking,type,offer,propertysize,phone,email,image,location,sell})
     console.log(display.data)}
     catch{ 
 
