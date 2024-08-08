@@ -153,7 +153,7 @@ function Category() {
   
     useEffect(() => {
       // Fetch properties using Axios
-      axios.get('http://localhost:4008/getpro')
+      axios.get('https://pmsystem-4.onrender.com/getpro')
         .then(response => {
           setProperties(response.data); // Assuming the response contains an array of properties
           setFilteredProperties(response.data); // Initially set filtered properties to all properties
