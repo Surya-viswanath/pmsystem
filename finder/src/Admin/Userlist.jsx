@@ -11,7 +11,7 @@ function Userlist() {
     useEffect(() => {
         const handleItems = async () => {
           try {
-            const response = await axios.get('http://localhost:4008/getcustomer');
+            const response = await axios.get('https://pmsystem-4.onrender.com/getcustomer');
             setCustomer(response.data);
           } catch (error) {
             console.error('Error fetching data:', error);
@@ -23,7 +23,7 @@ function Userlist() {
 
       const handleDelete = async (id) => {
         try {
-          await axios.delete(`http://localhost:4008/deletecustomer/${id}`);
+          await axios.delete(`https://pmsystem-4.onrender.com/deletecustomer/${id}`);
           // Update the state after successful deletion
           setCustomer(Customer.filter(list => list._id !== id));
         } catch (error) {
