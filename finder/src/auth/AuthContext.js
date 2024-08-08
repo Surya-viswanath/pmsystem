@@ -21,7 +21,7 @@ export function AuthProvider({ children }) {
 
     const signUp = async (name, email,phone,password) => {
         try {
-            const response = await axios.post('http://localhost:4008/Customersign', { name, email,phone,password });
+            const response = await axios.post('https://pmsystem-4.onrender.com/Customersign', { name, email,phone,password });
             setUser(response.data.user);
             return response;
         } catch (error) {
@@ -32,7 +32,7 @@ export function AuthProvider({ children }) {
 
     const login = async (email, password) => {
         try {
-            const response = await axios.post('http://localhost:4008/customerlogin', { email, password });
+            const response = await axios.post('https://pmsystem-4.onrender.com/customerlogin', { email, password });
             setUser(response.data.user);
             console.log('Received response:', response.data);
             return response;
