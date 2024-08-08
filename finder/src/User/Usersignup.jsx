@@ -28,7 +28,7 @@ const handlename =(event)=>{
    
       event.preventDefault()
       try{
-      const display =await axios.post('http://localhost:4008/Customersign',{name,email, password,phone})
+      const display =await axios.post('https://pmsystem-4.onrender.com/Customersign',{name,email, password,phone})
       console.log(display.data)}
       catch{ 
       }
