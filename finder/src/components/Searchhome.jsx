@@ -16,7 +16,7 @@ useEffect(() => {
 
 const fetchData = async () => {
   try {
-    const response = await axios.get('http://localhost:4008/getpro');
+    const response = await axios.get('https://pmsystem-4.onrender.com/getpro');
     setProperties(response.data); // Assuming the API returns an array of properties
     setFilteredProperties(response.data); // Initialize filtered properties with all properties
   } catch (error) {
